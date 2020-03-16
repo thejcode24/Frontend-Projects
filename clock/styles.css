@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-image: url("/img/background.jpg") no-repeat center center fixed; */
+    background-image: linear-gradient(to right, 
+                                        rgba(255,0,0,0.5),
+                                        rgba(0,0,255,0.5)), url(img/background.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#clock h2 {
+    position: relative;
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin: 40px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: 1.5em;
+}
+
+#clock #time {
+    display: flex;
+}
+
+#clock #time div {
+    position: relative;
+    margin: 0 5px;
+}
+
+#clock #time div span {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 120px;
+    background: #2196f3;
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+#clock #time div span:nth-child(2) {
+    height: 30px;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    box-shadow: none;
+    background: #127fd6;
+    text-transform: uppercase;
+}
+
+#clock #time div:last-child span {
+    background: #ff006a;
+}
+
+#clock #time div:last-child span:last-child {
+    background: #ec0062;
+}
