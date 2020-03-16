@@ -28,6 +28,9 @@
             var h = new Date().getHours();
             var m = new Date().getMinutes();
             var s = new Date().getSeconds();
+            
+            h = h%12;
+            h = h ? h : 12; // Hour 0 set to 12
 
             hours.innerHTML = h;
             minutes.innerHTML = m;
