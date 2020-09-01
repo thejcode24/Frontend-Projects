@@ -1,0 +1,51 @@
+
+#movies img, #movie img {
+    width: 100%;
+    padding-top: 25px;
+}
+
+.jumbotron {
+ margin-top: 30px;
+ padding: 100px;
+}
+
+
+#movie .col-md-8 .list-group {
+    font-size: 1.3em;
+}
+
+#movie .col-md-8 h2 {
+    font-size: 2em;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+}
+
+@media(min-width: 960px){
+    #movies .col-md-3  {
+        height: 400px;
+    }
+    
+    #movies .col-md-3 img {
+        height: 300px;
+    }
+
+    #movies .col-md-3 a {
+        padding: 10px;
+    }
+
+    #movie .well {
+        padding: 50px;
+        margin: 20px;
+        border: solid 1px black;    
+        font-size: 1.3em;
+    }
+
+    #movie .col-md-8 {
+        margin-top: 20px;
+    }
+
+}
+
+
